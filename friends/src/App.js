@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 
 import Login from './components/Login';
+import PrivateRoute from './components/PrivateRoute';
+import Protected from './components/Protected';
 
 import { 
   BrowserRouter as Router, 
@@ -19,6 +21,7 @@ function App() {
       </div>
       <Switch>
         <Route path='/login' component={Login} />
+        <PrivateRoute paht='/protected' component={Protected} />
       </Switch>
     </Router>
   );
