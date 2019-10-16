@@ -15,6 +15,7 @@ import {
 function App() {
   return (
     <Router>
+    <div className='container'>
       <div className="App">
         <Link to='/login'>Login</Link>
         <Link to='/protected'>Protected Page</Link>
@@ -23,6 +24,7 @@ function App() {
         <Route path='/login' component={Login} />
         <PrivateRoute paht='/protected' component={Protected} />
       </Switch>
+      </div>
     </Router>
   );
 }
