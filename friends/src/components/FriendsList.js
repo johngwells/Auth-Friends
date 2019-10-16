@@ -4,7 +4,7 @@ import { axiosWithAuth } from '../utils/axiosWithAuth';
 class FriendsList extends React.Component {
   state = {
     name: '',
-    age: null,
+    age: '',
     email: '',
     friends: []
   }
@@ -46,12 +46,32 @@ class FriendsList extends React.Component {
           <input 
             type='text'
             name='name'
+            placeholder='Name'
             value={this.state.name}
             onChange={this.handleChange}
           />
+          <input 
+            type='text'
+            name='age'
+            placeholder='Age'
+            value={this.state.age}
+            onChange={this.handleChange}
+          />
+          <input 
+            type='text'
+            name='email'
+            placeholder='Email'
+            value={this.state.email}
+            onChange={this.handleChange}
+          />
+          <button type='submit'>Submit friend</button>
         </form>
         {this.state.friends.map(friend => (
-          <p>{friend.name}</p>
+          <div key={friend.id} className='friend-container'>
+            <p>{friend.name}</p>
+            <p>{friend.age}</p>
+            <p>{friend.email}</p>
+          </div>
         ))}
       </div>
     );

@@ -20,3 +20,13 @@
 .App-link {
   color: #09d3ac;
 }
+
+.friend-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap
+}
+
+.friend-container p {
+  margin-left: 10px;
+}
