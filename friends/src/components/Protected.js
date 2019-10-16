@@ -4,7 +4,7 @@ import FriendsList from './FriendsList';
 const Protected = () => {
   return (
     <div>
-      Welcome USER!
+      Welcome!
       <FriendsList />
     </div>
   )
