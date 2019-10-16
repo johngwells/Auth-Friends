@@ -17,8 +17,14 @@
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#09d3ac;
 }
 
 .friend-container {
