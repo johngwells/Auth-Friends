@@ -1,3 +1,7 @@
+/* Reference source - hooks
+ https://github.com/DevWarr/Redux-Friends/blob/WEB23_afterhours/friends/src/components/FriendList.js
+ */
+
 import React from 'react';
 import './App.css';
 
@@ -22,7 +26,7 @@ function App() {
       </div>
       <Switch>
         <Route path='/login' component={Login} />
-        <PrivateRoute paht='/protected' component={Protected} />
+        <PrivateRoute path='/protected' component={Protected} />
       </Switch>
       </div>
     </Router>
